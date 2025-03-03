@@ -43,15 +43,6 @@ Dopo aver importato Kali, configura le interfacce di rete:
    ```bash
    ip a
    ```
-3. Configura manualmente la rete interna se necessario:
-   ```bash
-   sudo ip addr add 192.168.56.10/24 dev eth2
-   ```
-4. Controlla la connettività con Metasploitable:
-   ```bash
-   ping 192.168.56.100
-   ```
-
 ---
 
 ## 4. Avviare Kali Linux
