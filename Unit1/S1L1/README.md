@@ -63,3 +63,75 @@ Dopo aver importato Kali, configura le interfacce di rete:
    sudo apt update
    sudo apt upgrade -y
    ```
+
+# Installazione di Metasploitable 2 
+
+## 1. Creare una Nuova Macchina Virtuale
+
+1. Apri **VirtualBox** e clicca su **Nuova**.
+2. Imposta i seguenti parametri:
+   - **Nome:** Metasploitable2
+   - **Tipo:** Linux
+   - **Versione:** Ubuntu (32-bit)
+3. Assegna almeno **512 MB di RAM** (1024 MB consigliati).
+4. Seleziona **Non aggiungere un disco virtuale** e clicca su **Crea**.
+
+---
+
+## 2. Aggiungere il Disco `.vmdk`
+
+1. Seleziona la VM appena creata e clicca su **Impostazioni**.
+2. Vai su **Archiviazione** e clicca su **Controller: IDE**.
+3. Clicca su **Aggiungi disco esistente** e seleziona il file `.vmdk` estratto.
+4. Conferma cliccando su **OK**.
+
+---
+
+## 3. Configurazione della Rete
+
+1. Vai su **Impostazioni > Rete**.
+2. Configura la **Scheda 1** su **Rete Interna** per la comunicazione con Kali Linux.
+
+---
+
+## 4. Avviare Metasploitable 2
+
+1. Seleziona la VM e clicca su **Avvia**.
+2. Quando richiesto, effettua l'accesso con:
+   - **Nome utente:** msfadmin
+   - **Password:** msfadmin
+
+---
+
+## 5.Impostare un IP Statico su Metasploitable 2
+
+1. Accedi alla macchina virtuale con le credenziali:
+   ```bash
+   msfadmin:msfadmin
+   ```
+2. Apri il file delle configurazioni di rete:
+   ```bash
+   sudo nano /etc/network/interfaces
+   ```
+3. Modifica il file aggiungendo o modificando le seguenti righe con un la rete desiderata, poichè si tratta di rete interna non serve impostare il gateway:
+   ```plaintext
+   auto eth0
+   iface eth0 inet static
+   address 192.168.10.100
+   netmask 255.255.255.0
+   ```
+4. Salva il file premendo **CTRL + X**, poi **Y** e **Invio**.
+5. Riavvia la rete con:
+   ```bash
+    sudo /etc/init.d/networking restart
+   ```
+6. Verifica l'IP assegnato con:
+   ```bash
+   ip a
+   ```
+
+---
+
+
+
+   
