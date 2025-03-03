@@ -10,7 +10,7 @@ Prima di iniziare, assicurati di avere:
 - **Kali Linux VM** ([Scaricalo qui](https://www.kali.org/get-kali/#kali-virtual-machines))
 - **Metasploitable 2 VM** ([Scaricalo qui](https://sourceforge.net/projects/metasploitable/))
 
-## **1. Installazione di Kali Linux su VirtualBox**
+# **1. Installazione di Kali Linux su VirtualBox**
 
 ## 1. Importare la VM in VirtualBox
 
