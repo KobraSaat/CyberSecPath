@@ -1,6 +1,6 @@
-## CS0724: Esercizi e Progetti di Cybersecurity 🔐
+## Esercizi e Progetti di Cybersecurity 🔐
 
-Questo repository raccoglie **esercizi pratici** e **progetti svolti** durante il corso CS0724, suddiviso in tre unità principali. Il focus è esclusivamente sulla pratica: **nessuna teoria**, solo attività concrete su attacchi, difesa e analisi.  
+Questo repository raccoglie **esercizi pratici** e **progetti svolti** durante il mio percorso per studiare cybersecurity, suddiviso in tre unità principali. Il focus è esclusivamente sulla pratica: **nessuna teoria**, solo attività concrete su attacchi, difesa e analisi.  
 
 ### 👉 Struttura del Repository  
 
