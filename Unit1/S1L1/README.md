@@ -101,9 +101,12 @@ Dopo aver importato Kali, configura le interfacce di rete:
    - **Disco Fisso:**
    - Seleziona **Usa un file di disco fisso virtuale esistente:**
       - Clicca su **scegliere un file di disco fisso virtuale.**
-      - clicca su aggiungi e seleziona il file .vmdk estratto all'interno della cartella Metasploitable 2, dopo di che clicca su **Scegli**.
-        
    ![immagine](https://github.com/user-attachments/assets/5a9daa89-cf78-41f8-9cdb-a28b83a98aaf)
+      - clicca su aggiungi e seleziona il file .vmdk estratto all'interno della cartella Metasploitable 2, dopo di che clicca su **Scegli**.
+   ![immagine](https://github.com/user-attachments/assets/563d6976-9228-4292-b5d9-7053d1e6f1d2)
+   ![immagine](https://github.com/user-attachments/assets/dbfd64f4-66cc-4117-a75f-1f0c9650860f)
+
+   
 
 3. Clicca su **fine**
 
@@ -113,6 +116,8 @@ Dopo aver importato Kali, configura le interfacce di rete:
 
 1. Vai su **Impostazioni > Rete**.
 2. Configura la **Scheda 1** su **Rete Interna** per la comunicazione con Kali Linux.
+![immagine](https://github.com/user-attachments/assets/26389989-0c41-4934-97c3-4af924c3cbec)
+
 
 ---
 
@@ -142,7 +147,9 @@ Dopo aver importato Kali, configura le interfacce di rete:
    address 192.168.10.100
    netmask 255.255.255.0
    ```
-4. Salva il file premendo **CTRL + X**, poi **Y** e **Invio**.
+![immagine](https://github.com/user-attachments/assets/a2db1e18-3956-4458-ac9e-8c49499d87c5)
+
+4. Salva il file premendo **CTRL + o** e **Invio** e poi **CTRL + x** .
 5. Riavvia la rete con:
    ```bash
     sudo /etc/init.d/networking restart
@@ -151,6 +158,7 @@ Dopo aver importato Kali, configura le interfacce di rete:
    ```bash
    ip a
    ```
+![immagine](https://github.com/user-attachments/assets/a3f461db-29d5-46b9-89ad-7b3bbc849fad)
 
 ---
 
