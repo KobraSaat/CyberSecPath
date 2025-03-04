@@ -50,13 +50,6 @@ Dopo aver importato Kali, configura le interfacce di rete:
 ![immagine](https://github.com/user-attachments/assets/cf2c5176-fb78-4160-b7ed-0c0dd4ac6b51)
 
 ### Configurazione della Rete su Kali
-1. Avvia Kali e apri un terminale.
-2. Controlla le interfacce di rete con:
-   ```bash
-   ip a
-   ```
----
-
 ## 4. Avviare Kali Linux
 
 1. Seleziona la VM di Kali Linux.
@@ -64,6 +57,11 @@ Dopo aver importato Kali, configura le interfacce di rete:
 3. Alla schermata di login, usa le credenziali predefinite:
    - **Nome utente:** kali
    - **Password:** kali
+2. Controlla le interfacce di rete con:
+   ```bash
+   ip a
+   ```
+![immagine](https://github.com/user-attachments/assets/f7cbcbd3-a1a9-4a13-b524-5e2095cce8f2)
 
 ---
 
