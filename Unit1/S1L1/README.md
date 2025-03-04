@@ -6,7 +6,7 @@ Questo esercizio guida alla creazione di un ambiente di laboratorio virtuale su 
 ## Requisiti
 Prima di iniziare, assicurati di avere:
 
-- **VirtualBox** installato ([Scaricalo qui](https://www.virtualbox.org/))
+- **VirtualBox 7.1.6** installato ([Scaricalo qui](https://www.virtualbox.org/))
 - **Kali Linux VM** ([Scaricalo qui](https://www.kali.org/get-kali/#kali-virtual-machines))
 - **Metasploitable 2 VM** ([Scaricalo qui](https://sourceforge.net/projects/metasploitable/))
 
@@ -70,24 +70,32 @@ Dopo aver importato Kali, configura le interfacce di rete:
 
 1. Apri **VirtualBox** e clicca su **Nuova**.
 2. Imposta i seguenti parametri:
-   - **Nome:** Metasploitable2
-   - **Tipo:** Linux
-   - **Versione:** Ubuntu (32-bit)
-3. Assegna almeno **512 MB di RAM** (1024 MB consigliati).
-4. Seleziona **Non aggiungere un disco virtuale** e clicca su **Crea**.
+   - **Nome e Sistema operativo**
+      - **Nome e :** Metasploitable2
+      - **Tipo:** Linux
+      - **Sottotipo:** Ubuntu
+      - **Versione:** Ubuntu (32-bit)
+        
+   ![immagine](https://github.com/user-attachments/assets/20a37d9f-c8aa-4920-9413-1e0ab8d76d9e)
+
+   - **Hardware:**
+      - Memoria di base: Assegna **512 MB di RAM** (1024 MB consigliati).
+      - Processori: 1
+    
+   ![immagine](https://github.com/user-attachments/assets/42c35f39-1242-49fb-93ec-c3376018c031)
+
+   - **Disco Fisso:**
+   - Seleziona **Usa un file di disco fisso virtuale esistente:**
+      - Clicca su **scegliere un file di disco fisso virtuale.**
+      - clicca su aggiungi e seleziona il file .vmdk estratto all'interno della cartella Metasploitable 2, dopo di che clicca su **Scegli**.
+        
+   ![immagine](https://github.com/user-attachments/assets/5a9daa89-cf78-41f8-9cdb-a28b83a98aaf)
+
+3. Clicca su **fine**
 
 ---
 
-## 2. Aggiungere il Disco `.vmdk`
-
-1. Seleziona la VM appena creata e clicca su **Impostazioni**.
-2. Vai su **Archiviazione** e clicca su **Controller: IDE**.
-3. Clicca su **Aggiungi disco esistente** e seleziona il file `.vmdk` estratto.
-4. Conferma cliccando su **OK**.
-
----
-
-## 3. Configurazione della Rete
+## 2. Configurazione della Rete
 
 1. Vai su **Impostazioni > Rete**.
 2. Configura la **Scheda 1** su **Rete Interna** per la comunicazione con Kali Linux.
