@@ -16,8 +16,12 @@ Prima di iniziare, assicurati di avere:
 
 1. Apri **VirtualBox**.
 2. Clicca su **Macchina > Aggiungi...**.
-3. Vai nella cartella dove hai estratto i file e seleziona il file `.vbox`.
-4. Clicca su **Apri**.
+![immagine](https://github.com/user-attachments/assets/4b38de1a-3616-4ffb-a595-7e095aa5d992)
+
+4. Vai nella cartella dove hai estratto i file e seleziona il file `.vbox`.
+![immagine](https://github.com/user-attachments/assets/9ff94fef-35e6-465f-9b87-5bb9bc853dd9)
+
+6. Clicca su **Apri**.
 
 ---
 
@@ -25,7 +29,10 @@ Prima di iniziare, assicurati di avere:
 
 1. Seleziona la macchina virtuale e clicca su **Impostazioni**.
 2. Vai su **Sistema > Scheda Madre** e imposta almeno **4096 MB di RAM**.
-3. Vai su **Sistema > Processore** e aumenta il numero di CPU per migliori prestazioni. (Default 2)
+![immagine](https://github.com/user-attachments/assets/05f56e9f-677b-4d7e-a961-e3c844129a71)
+
+4. Vai su **Sistema > Processore** e aumenta il numero di CPU per migliori prestazioni. (Default 2)
+![immagine](https://github.com/user-attachments/assets/35628a2d-7400-4918-90a5-39c2f1ef3fb9)
 
 ---
 
@@ -34,8 +41,13 @@ Prima di iniziare, assicurati di avere:
 Dopo aver importato Kali, configura le interfacce di rete:
 
 1. **Scheda 1 - NAT** → Per l'accesso a Internet.
-2. **Scheda 2 - Rete Solo Host** → Per CTF con DHCP.
-3. **Scheda 3 - Rete Interna** → Per comunicare con Metasploitable 2.
+![immagine](https://github.com/user-attachments/assets/93ca835c-4538-4971-9a2e-746f11e6d569)
+
+3. **Scheda 2 - Rete Solo Host** → Per CTF con DHCP.
+![immagine](https://github.com/user-attachments/assets/9e8f156b-f355-49fb-8d73-762b3c267ee8)
+
+5. **Scheda 3 - Rete Interna** → Per comunicare con Metasploitable 2.
+![immagine](https://github.com/user-attachments/assets/cf2c5176-fb78-4160-b7ed-0c0dd4ac6b51)
 
 ### Configurazione della Rete su Kali
 1. Avvia Kali e apri un terminale.
@@ -60,9 +72,11 @@ Dopo aver importato Kali, configura le interfacce di rete:
 1. Apri un **terminale** all'interno di Kali Linux.
 2. Esegui i seguenti comandi:
    ```bash
-   sudo apt update
-   sudo apt upgrade -y
+   sudo apt update && sudo apt upgrade -y
+   
    ```
+![immagine](https://github.com/user-attachments/assets/b7d88072-ab50-4481-ab4a-e3af07aeef41)
+
 
 # Installazione di Metasploitable 2 
 
